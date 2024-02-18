@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>To-Do List</h1>
+    </header>
+    <div class="create-task-container">
+      <button class="create-task-btn">Создать задачу</button>
+      <form class="create-task-form">
+        <label>Заголовок:</label>
+        <input class="create-task-input" id="input-title" />
+        <label> Описание:</label>
+        <input class="create-task-input" id="input-discription" />
+        <button class="create-task-form-btn">Создать</button>
+      </form>
+    </div>
+    <div class="select-tasks">
+      <button class="select" id="select-development">Активные</button>
+      <button class="select" id="select-done">Выполненные</button>
+      <button class="select" id="select-all">Все</button>
+    </div>
+    <div class="all-task-wrapper">
+      <div class="task-container-all">
+        <div class="list-all-task"></div>
+        <div class="close">&#8592</div>
+      </div>
+    </div>
+    <div class="main-field">
+      <div class="tasks-field-container">
+        <div class="task-line">
+          <div class="task-container" id="development">
+            <h3 class="task-container-title">Активные задачи</h3>
+          </div>
+          <div class="task-container" id="done">
+            <h3 class="task-container-title">Выполненые задачи</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </body>
+  <script src="/script.js"></script>
+</html>
